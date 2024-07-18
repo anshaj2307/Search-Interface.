@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-screen bg-blue-200">
+  <div class="relative flex items-center bg-white rounded-full shadow-lg">
+    <div class="relative">
+      <button id="dropdownButton" class="flex items-center bg-primary text-primary-foreground py-2 px-4 rounded-l-full focus:outline-none" style="background-color: #99004d; color: #fff; border-radius: 20px;">
+        <span id="dropdownText">Everything</span>
+        <span class="material-symbols-outlined" style="margin-left: 30px;">
+          keyboard_arrow_down
+          </span>
+      </button>
+      <div id="dropdownMenu" class="absolute left-0 mt-2 w-full bg-white rounded-md shadow-lg hidden">
+        <ul>
+          <li class="px-4 py-2 hover:bg-zinc-200 cursor-pointer">Everything</li>
+          <li class="px-4 py-2 hover:bg-zinc-200 cursor-pointer">Software development</li>
+          <li class="px-4 py-2 hover:bg-zinc-200 cursor-pointer">Web development</li>
+          <li class="px-4 py-2 hover:bg-zinc-200 cursor-pointer">Data Analyst</li>
+          <li class="px-4 py-2 hover:bg-zinc-200 cursor-pointer">IT Consultant</li>
+          <li class="px-4 py-2 hover:bg-zinc-200 cursor-pointer">Network administrator</li>
+        </ul>
+      </div>
+    </div>
+    <input id="searchInput" type="text" placeholder="Search Anything" class="py-2 px-4 w-64 rounded-r-full focus:outline-none" style="border: none;">
+    <button class="bg-primary text-primary-foreground p-2 rounded-full ml-2 focus:outline-none">
+      <span class="material-symbols-outlined" style="color: #99004d;">
+        search
+        </span>
+    </button>
+  </div>
+</div>
+<script src="script.js"></script>
+<style>
+  :root {
+  --background: #f8fafc;
+  --primary-foreground: #ffffff;
+  --border: #e5e7eb;
+  --input: #f9fafb;
+  --ring: #c7d2fe;
+  --secondary-foreground: #ffffff;
+  --accent: #10b981;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --muted: #9ca3af;
+  --muted-foreground: #6b7280;
+  --card: #ffffff;
+  --popover: #ffffff;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.text-primary-foreground {
+  color: var(--primary-foreground);
+}
+</style>
+  </body>
+</html>
